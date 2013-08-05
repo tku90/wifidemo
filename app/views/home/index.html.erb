@@ -39,7 +39,10 @@
         </div>
       </div>
       <%# <%= submit_tag("Register &rarr;".html_safe, :class => "secondary small button")%>
-      <p><a href="#" class="secondary small button">Go Online!</a></p>
+
+      <p>
+        <%= link_to 'Go Online!', ad_show_path, class: "secondary small button" %>
+      </p>
 
     <% end %>
     </div>
@@ -89,17 +92,13 @@
       <hr />
       <div class="row">
         <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+          <p>&copy; Copyright Nest Wifi</p>
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
             <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
-            <li><a href="#">Link 6</a></li>
-            <li><a href="#">Link 7</a></li>
           </ul>
         </div>
       </div>

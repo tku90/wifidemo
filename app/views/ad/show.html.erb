@@ -1,0 +1,41 @@
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="button-group">
+        <li><a href="#" class="button">Link 1</a></li>
+        <li><a href="#" class="button">Link 2</a></li>
+        <li><a href="#" class="button">Link 3</a></li>
+      </ul>
+
+      <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
+      <h2 style="text-align: center;">Buy a Moto X Phone and get a free case</h2>
+      <div class="crop">
+        <img src="http://a.abcnews.com/images/Technology/HT_moto_x_smartphone_colors_thg_130801_16x9_992.jpg" />
+      </div>
+      <p id="countdown" style="text-align: center;"></p>
+    </div>
+  </div>
+
+  <!-- Main Content Section -->
+
+  <div class="row">
+
+    <div class="large-8 columns">
+    </div>
+
+    <div class="large-4 columns">
+    </div>
+  </div>
+
+  <script>
+    var timer = 10;
+    var timerMessage = setInterval(function(){
+      $("#countdown").html("You will be connected to the internet in " + timer + " seconds");
+      timer--;
+    },1000)
+
+    var pageForward = setTimeout(function(){
+      clearInterval(timerMessage)
+      $("#countdown").html("Connecting to internet");
+      self.location = "<%= internet_connect_path %>"
+    },10000)
+  </script>

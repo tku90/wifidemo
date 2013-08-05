@@ -17,3 +17,10 @@
 //= require_tree .
 
 $(document).foundation();
+
+(function ($) {
+  $(document).ready(function() {
+    var WifiDemo = {};
+  });
+})(jQuery);
+

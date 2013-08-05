@@ -1,4 +1,6 @@
 Wifidemo::Application.routes.draw do
+  get "internet/connect"
+  get "ad/show"
   root "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
