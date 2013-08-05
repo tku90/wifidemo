@@ -1,0 +1,107 @@
+<!-- Nav and Banner -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="button-group">
+        <li><a href="#" class="button">Link 1</a></li>
+        <li><a href="#" class="button">Link 2</a></li>
+        <li><a href="#" class="button">Link 3</a></li>
+      </ul>
+
+      <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
+      <p><img src="http://placehold.it/1000x400&text=[banner img]" /></p>
+    </div>
+  </div>
+
+  <!-- End Nav and Banner -->
+
+
+  <!-- Main Content Section -->
+
+  <div class="row">
+
+    <div class="large-8 columns">
+      <h4>Enter your email to register</h4>
+      <%= form_for :user, url: "add", html: { class: "sign-in form-horizontal text-left" } do |f| %>
+        <div class="control-group">
+        <%# <%= f.label :email, class: "control-label" %>
+        <%= f.label :email, class: "control-label" %>
+        <div class="controls">
+          <%# <%= f.email_field :email, :autofocus => true, placeholder: "your@email.com" %>
+          <%= f.email_field :encrypted_email, :autofocus => true, placeholder: "your@email.com" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :password, class: "control-label" %>
+        <div class="controls">
+          <%= f.password_field :password, placeholder: "password" %>
+        </div>
+      </div>
+      <%# <%= submit_tag("Register &rarr;".html_safe, :class => "secondary small button")%>
+      <p><a href="#" class="secondary small button">Go Online!</a></p>
+
+    <% end %>
+    </div>
+
+    <div class="large-4 columns">
+
+      <!-- Gallery sidebar with a block grid. Note: block grid items should be the same size for optimal results -->
+
+      <ul class="small-block-grid-3">
+        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
+        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
+        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
+        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
+        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
+        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- Call to Action Panel -->
+  <div class="row">
+    <div class="large-12 columns">
+
+      <div class="panel">
+        <h4>Get in touch!</h4>
+
+        <div class="row">
+          <div class="large-9 columns">
+            <p>We'd love to hear from you, you attractive person you.</p>
+          </div>
+          <div class="large-3 columns">
+            <a href="#" class="radius button right">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+            <li><a href="#">Link 6</a></li>
+            <li><a href="#">Link 7</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
