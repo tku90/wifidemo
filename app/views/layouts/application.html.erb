@@ -22,9 +22,40 @@
 
   <body>
 
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="button-group">
+        <li><a href="#" class="button">Link 1</a></li>
+        <li><a href="#" class="button">Link 2</a></li>
+        <li><a href="#" class="button">Link 3</a></li>
+      </ul>
+
     <%= yield %>
 
+    </div>
+  </div>
 
-    <%= javascript_include_tag "application" %>
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Copyright Nest Wifi</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
+
+  <%= javascript_include_tag "application" %>
+
   </body>
 </html>
