@@ -2,20 +2,40 @@
 
   <div class="row">
 
-    <div class="large-8 columns" style="text-align: center;">
+    <div class="large-12 columns" style="text-align: center;">
       <h2>
-        <%= @ad.name %>
+        <%= @main_ad.name %>
       </h2>
+      <p class="subheader"> This internet connection is sponsored by <%= @main_ad.name %> </p>
       <div id="ad-image">
-        <a href="<%= @ad.url %>" target="_blank">
-          <img src="<%= @ad.image_url %>" />
+        <a href="<%= @main_ad.url %>" target="_blank">
+          <img src="<%= @main_ad.image_url %>" />
         </a>
+        <hr />
+      </div>
+
+      <div class="row">
+        <div class="large-4 columns">
+          <%= image_tag @ads[0].image_url %>
+          <!-- <img src="http://placehold.it/400x300&#38;text=[img]" /> -->
+        </div>
+
+        <div class="large-4 columns">
+          <%= image_tag @ads[1].image_url %>
+          <!-- <img src="http://placehold.it/400x300&#38;text=[img]" /> -->
+        </div>
+
+        <div class="large-4 columns">
+          <%= image_tag @ads[2].image_url %>
+          <!-- <img src="http://placehold.it/400x300&#38;text=[img]" /> -->
+        </div>
+
       </div>
 
       <p>
         <div id="countdown"></div>
         <div id='internet-connect-link' style="display:none">
-          <a href="<%= internet_connect_path %>">Connect to the Internet!</a>
+          <a class="button" href="<%= internet_connect_path %>">Connect to the Internet!</a>
         </div>
       </p>
 

@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: wifidemo_development
   pool: 5
-  username: tku@thoughtworks.com
+  username: ThoughtWorks
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a

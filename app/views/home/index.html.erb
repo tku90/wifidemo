@@ -4,7 +4,7 @@
     <div class="large-12 columns">
 
       <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
-      <p><img src="https://dl.dropboxusercontent.com/u/5300360/website/wifidemo/flushing_wifi_logo.png" /></p>
+      <%= image_tag 'flushing_wifi_logo.png' %>
     </div>
   </div>
 
@@ -13,7 +13,7 @@
   <div class="row">
 
     <div class="large-8 columns">
-      <h3>Get Free Wi-fi</h3>
+      <h3>Get Connected to Wi-fi</h3>
       <%= form_for :user, url: "add", html: { class: "sign-in form-horizontal text-left" } do |f| %>
         <div class="control-group">
         <%# <%= f.label :email, class: "control-label" %>
