@@ -12,7 +12,7 @@
 
   <div class="row">
 
-    <div class="large-8 columns">
+    <div class="large-10 columns" id="login-area">
       <h3>Get Connected to Wi-fi</h3>
       <%= form_for :user, url: "add", html: { class: "sign-in form-horizontal text-left" } do |f| %>
         <div class="control-group">
@@ -20,7 +20,12 @@
         <%= f.label :email, class: "control-label" %>
         <div class="controls">
           <%# <%= f.email_field :email, :autofocus => true, placeholder: "your@email.com" %>
-          <%= f.email_field :encrypted_email, :autofocus => true, placeholder: "your@email.com" %>
+          <%# <%= f.email_field :encrypted_email, :autofocus => true, placeholder: "your@email.com" %>
+          <%= text_field_tag 'email' %>
+          <label for="terms-agree">
+            <input type="checkbox" id="checkbox1" CHECKED>
+            <span class="custom checkbox checked"></span> I agree to the terms and conditions
+          </label>
         </div>
       </div>
 
@@ -29,13 +34,15 @@
       <p>
         <%= link_to 'Go Online!', ad_show_path, class: "secondary small button" %>
       </p>
-
     <% end %>
     </div>
 
-    <div class="large-4 columns">
-      <p><img src="https://dl.dropboxusercontent.com/u/5300360/website/wifidemo/right_banner.png" /></p>
+    <div class="large-2 columns">
+      <%= image_tag 'phone_wifi.png' %>
     </div>
+<!--     <div class="large&#45;4 columns"> -->
+<!--       <p><img src="https://dl.dropboxusercontent.com/u/5300360/website/wifidemo/right_banner.png" /></p> -->
+<!--     </div> -->
 
   </div>
 
